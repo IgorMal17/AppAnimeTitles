@@ -17,9 +17,15 @@ namespace AppAnimeTitles
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BtnAddType_Click(object sender, EventArgs e)
+        {
+            FormAddType formAddType = new FormAddType();
+            formAddType.ShowDialog();
         }
     }
 }

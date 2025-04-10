@@ -1,6 +1,6 @@
 ﻿namespace AppAnimeTitles
 {
-    partial class FormAdd
+    partial class FormAddType
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,8 @@
         {
             panel1 = new Panel();
             PanelFill = new Panel();
-            label1 = new Label();
+            textBoxTypeName = new TextBox();
+            labelTypeName = new Label();
             flowLayoutPanelBottom = new FlowLayoutPanel();
             btnSaveChanges = new Button();
             btnCancel = new Button();
@@ -47,29 +48,39 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(10);
-            panel1.Size = new Size(778, 591);
+            panel1.Size = new Size(434, 176);
             panel1.TabIndex = 0;
             // 
             // PanelFill
             // 
-            PanelFill.Controls.Add(label1);
+            PanelFill.Controls.Add(textBoxTypeName);
+            PanelFill.Controls.Add(labelTypeName);
             PanelFill.Dock = DockStyle.Fill;
             PanelFill.Location = new Point(10, 10);
+            PanelFill.Margin = new Padding(3, 0, 3, 0);
             PanelFill.Name = "PanelFill";
             PanelFill.Padding = new Padding(10);
-            PanelFill.Size = new Size(758, 510);
+            PanelFill.Size = new Size(414, 95);
             PanelFill.TabIndex = 2;
             // 
-            // label1
+            // textBoxTypeName
             // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Top;
-            label1.Location = new Point(10, 10);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 25);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            label1.Click += label1_Click;
+            textBoxTypeName.Dock = DockStyle.Top;
+            textBoxTypeName.Location = new Point(10, 35);
+            textBoxTypeName.Name = "textBoxTypeName";
+            textBoxTypeName.Size = new Size(394, 33);
+            textBoxTypeName.TabIndex = 1;
+            // 
+            // labelTypeName
+            // 
+            labelTypeName.AutoSize = true;
+            labelTypeName.Dock = DockStyle.Top;
+            labelTypeName.Location = new Point(10, 10);
+            labelTypeName.Name = "labelTypeName";
+            labelTypeName.Size = new Size(104, 25);
+            labelTypeName.TabIndex = 0;
+            labelTypeName.Text = "Тип аниме";
+            labelTypeName.Click += label1_Click;
             // 
             // flowLayoutPanelBottom
             // 
@@ -77,10 +88,10 @@
             flowLayoutPanelBottom.Controls.Add(btnSaveChanges);
             flowLayoutPanelBottom.Controls.Add(btnCancel);
             flowLayoutPanelBottom.Dock = DockStyle.Bottom;
-            flowLayoutPanelBottom.Location = new Point(10, 520);
+            flowLayoutPanelBottom.Location = new Point(10, 105);
             flowLayoutPanelBottom.Name = "flowLayoutPanelBottom";
             flowLayoutPanelBottom.Padding = new Padding(10);
-            flowLayoutPanelBottom.Size = new Size(758, 61);
+            flowLayoutPanelBottom.Size = new Size(414, 61);
             flowLayoutPanelBottom.TabIndex = 1;
             // 
             // btnSaveChanges
@@ -103,17 +114,17 @@
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
             // 
-            // FormAdd
+            // FormAddType
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(778, 591);
+            ClientSize = new Size(434, 176);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
-            Name = "FormAdd";
-            Text = "FormAdd";
+            Name = "FormAddType";
+            Text = "Информация о типе аниме";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             PanelFill.ResumeLayout(false);
@@ -130,6 +141,7 @@
         private FlowLayoutPanel flowLayoutPanelBottom;
         private Button btnSaveChanges;
         private Button btnCancel;
-        private Label label1;
+        private Label labelTypeName;
+        private TextBox textBoxTypeName;
     }
 }

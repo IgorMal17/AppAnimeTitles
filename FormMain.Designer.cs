@@ -36,9 +36,9 @@
             btnShowTypes.AutoSize = true;
             btnShowTypes.Location = new Point(12, 12);
             btnShowTypes.Name = "btnShowTypes";
-            btnShowTypes.Size = new Size(267, 38);
+            btnShowTypes.Size = new Size(313, 38);
             btnShowTypes.TabIndex = 0;
-            btnShowTypes.Text = "Справочник \"Типов Аниме\"";
+            btnShowTypes.Text = "Отобразить список \"Типы аниме\"";
             btnShowTypes.UseVisualStyleBackColor = true;
             btnShowTypes.Click += BtnShowTypes_Click;
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppAnimeTitles
 {
-    public partial class FormAdd : Form
+    public partial class FormAddType : Form
     {
-        public FormAdd()
+        public FormAddType()
         {
             InitializeComponent();
         }

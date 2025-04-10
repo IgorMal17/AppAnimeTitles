@@ -52,7 +52,7 @@
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(741, 61);
             flowLayoutPanelTop.TabIndex = 0;
-            flowLayoutPanelTop.Paint += flowLayoutPanel1_Paint;
+            flowLayoutPanelTop.Paint += FlowLayoutPanel1_Paint;
             // 
             // btnAddType
             // 
@@ -64,6 +64,7 @@
             btnAddType.TabIndex = 0;
             btnAddType.Text = "Добавить";
             btnAddType.UseVisualStyleBackColor = false;
+            btnAddType.Click += BtnAddType_Click;
             // 
             // btnUpdateType
             // 
