@@ -125,6 +125,7 @@
             Margin = new Padding(5);
             Name = "FormAddType";
             Text = "Информация о типе аниме";
+            Load += FormAddType_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             PanelFill.ResumeLayout(false);
