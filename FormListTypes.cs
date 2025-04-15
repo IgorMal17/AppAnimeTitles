@@ -1,5 +1,8 @@
 ﻿using AppAnimeTitles.Models;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
+=======
+>>>>>>> be6e07acb2a918c8f811e2c8378800e5ff38c402
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +20,11 @@ namespace AppAnimeTitles
     {
         private AppContext db;
 
+<<<<<<< HEAD
         public FormListTypes ()
+=======
+        public FormListTypes()
+>>>>>>> be6e07acb2a918c8f811e2c8378800e5ff38c402
         {
             InitializeComponent();
         }
@@ -26,6 +33,7 @@ namespace AppAnimeTitles
         {
             base.OnLoad(e);
             this.db  = new AppContext();
+<<<<<<< HEAD
             this.db.Types.Load();
             this.dataGridViewTypes.DataSource = this.db.Types.Local.OrderBy(o=>o.TypeName).ToList();
 
@@ -43,6 +51,8 @@ namespace AppAnimeTitles
 
             this.db?.Dispose();
             this.db = null;
+=======
+>>>>>>> be6e07acb2a918c8f811e2c8378800e5ff38c402
         }
 
         private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -54,6 +64,11 @@ namespace AppAnimeTitles
         {
             FormAddType formAddType = new FormAddType();
             formAddType.ShowDialog();
+        }
+
+        private void FormListTypes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
