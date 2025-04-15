@@ -30,10 +30,5 @@ namespace AppAnimeTitles
         {
 
         }
-
-        private void FormAddType_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
