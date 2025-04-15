@@ -52,7 +52,6 @@
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(741, 61);
             flowLayoutPanelTop.TabIndex = 0;
-            flowLayoutPanelTop.Paint += FlowLayoutPanel1_Paint;
             // 
             // btnAddType
             // 
