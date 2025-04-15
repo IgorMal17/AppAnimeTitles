@@ -90,12 +90,14 @@
             // 
             // dataGridViewTypes
             // 
+            dataGridViewTypes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewTypes.BackgroundColor = Color.White;
             dataGridViewTypes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewTypes.Dock = DockStyle.Fill;
             dataGridViewTypes.Location = new Point(10, 10);
             dataGridViewTypes.Name = "dataGridViewTypes";
             dataGridViewTypes.ReadOnly = true;
+            dataGridViewTypes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewTypes.Size = new Size(721, 413);
             dataGridViewTypes.TabIndex = 1;
             // 
@@ -121,7 +123,7 @@
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
             Name = "FormListTypes";
-            Text = "Список типов аниме";
+            Text = "Список типов аниме"; 
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTypes).EndInit();

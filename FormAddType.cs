@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppAnimeTitles.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,11 @@ namespace AppAnimeTitles
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAddType_Load(object sender, EventArgs e)
         {
 
         }
