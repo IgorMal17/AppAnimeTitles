@@ -28,17 +28,29 @@ namespace AppAnimeTitles
             this.db = new AppContext();
             this.db.Types.Load();
             this.dataGridViewTypes.DataSource = this.db.Types.Local.OrderBy(o => o.TypeName).ToList();
+
+            dataGridViewTypes.Columns["Id"].Visible = false;
+            dataGridViewTypes.Columns["AnimeTitles"].Visible = false;
+
+            dataGridViewTypes.Columns["TypeName"].HeaderText = "Тип аниме";
+        }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            base.OnClosing(e);
+            this.db?.Dispose();
+            this.db = null;
         }
 
         private void BtnAddType_Click(object sender, EventArgs e)
         {
-            FormAddType formAddType = new FormAddType();
-            formAddType.ShowDialog();
-        }
+            FormAddType formAddType = new();
+            DialogResult result = formAddType.ShowDialog(this);
 
-        private void FormListTypes_Load(object sender, EventArgs e)
-        {
-
+            if (result == DialogResult.Cancel)
+                return;
+            
+            Type type = new Type();
+            type.TypeName = formAddType.textBoxTypeName.Text;
         }
     }
 }

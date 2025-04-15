@@ -143,6 +143,6 @@ namespace AppAnimeTitles
         private Button btnSaveChanges;
         private Button btnCancel;
         private Label labelTypeName;
-        private TextBox textBoxTypeName;
+        protected internal TextBox textBoxTypeName;
     }
 }
