@@ -101,12 +101,14 @@ namespace AppAnimeTitles
             // btnSaveChanges
             // 
             btnSaveChanges.AutoSize = true;
+            btnSaveChanges.DialogResult = DialogResult.OK;
             btnSaveChanges.Location = new Point(13, 13);
             btnSaveChanges.Name = "btnSaveChanges";
             btnSaveChanges.Size = new Size(115, 35);
             btnSaveChanges.TabIndex = 0;
             btnSaveChanges.Text = "Сохранить";
             btnSaveChanges.UseVisualStyleBackColor = true;
+            btnSaveChanges.Click += btnSaveChanges_Click;
             // 
             // btnCancel
             // 
@@ -133,7 +135,6 @@ namespace AppAnimeTitles
             Margin = new Padding(5);
             Name = "FormAddType";
             Text = "Информация о типе аниме";
-            Load += FormAddType_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             PanelFill.ResumeLayout(false);

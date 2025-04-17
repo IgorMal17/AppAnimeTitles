@@ -101,8 +101,7 @@ namespace AppAnimeTitles
                 "Вы уверены, что хотите удалить объект? \n Все связанные данные будут удалены.",
                 "",
                 MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-                );
+                MessageBoxIcon.Question);
 
             if (result == DialogResult.No)
                 return;
@@ -124,6 +123,11 @@ namespace AppAnimeTitles
         }
 
         private void FormListTypes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteType_Click_1(object sender, EventArgs e)
         {
 
         }

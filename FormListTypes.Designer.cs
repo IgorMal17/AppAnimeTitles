@@ -75,6 +75,7 @@
             btnUpdateType.TabIndex = 1;
             btnUpdateType.Text = "Редактировать";
             btnUpdateType.UseVisualStyleBackColor = false;
+            btnUpdateType.Click += BtnUpdateType_Click;
             // 
             // btnDeleteType
             // 
@@ -86,6 +87,7 @@
             btnDeleteType.TabIndex = 2;
             btnDeleteType.Text = "Удалить";
             btnDeleteType.UseVisualStyleBackColor = false;
+            btnDeleteType.Click += BtnDeleteType_Click;
             // 
             // dataGridViewTypes
             // 
