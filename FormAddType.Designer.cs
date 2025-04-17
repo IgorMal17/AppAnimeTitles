@@ -29,6 +29,7 @@ namespace AppAnimeTitles
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             PanelFill = new Panel();
             textBoxTypeName = new TextBox();
@@ -36,9 +37,11 @@ namespace AppAnimeTitles
             flowLayoutPanelBottom = new FlowLayoutPanel();
             btnSaveChanges = new Button();
             btnCancel = new Button();
+            errorProvider = new ErrorProvider(components);
             panel1.SuspendLayout();
             PanelFill.SuspendLayout();
             flowLayoutPanelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -62,7 +65,7 @@ namespace AppAnimeTitles
             PanelFill.Name = "PanelFill";
             PanelFill.Padding = new Padding(10);
             PanelFill.Size = new Size(414, 95);
-            PanelFill.TabIndex = 2;
+            PanelFill.TabIndex = 0;
             // 
             // textBoxTypeName
             // 
@@ -71,6 +74,7 @@ namespace AppAnimeTitles
             textBoxTypeName.Name = "textBoxTypeName";
             textBoxTypeName.Size = new Size(394, 33);
             textBoxTypeName.TabIndex = 1;
+            textBoxTypeName.TextChanged += textBoxTypeName_TextChanged;
             // 
             // labelTypeName
             // 
@@ -81,7 +85,6 @@ namespace AppAnimeTitles
             labelTypeName.Size = new Size(104, 25);
             labelTypeName.TabIndex = 0;
             labelTypeName.Text = "Тип аниме";
-            labelTypeName.Click += label1_Click;
             // 
             // flowLayoutPanelBottom
             // 
@@ -115,6 +118,10 @@ namespace AppAnimeTitles
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
             // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
+            // 
             // FormAddType
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
@@ -126,12 +133,14 @@ namespace AppAnimeTitles
             Margin = new Padding(5);
             Name = "FormAddType";
             Text = "Информация о типе аниме";
+            Load += FormAddType_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             PanelFill.ResumeLayout(false);
             PanelFill.PerformLayout();
             flowLayoutPanelBottom.ResumeLayout(false);
             flowLayoutPanelBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
         }
 
@@ -144,5 +153,6 @@ namespace AppAnimeTitles
         private Button btnCancel;
         private Label labelTypeName;
         protected internal TextBox textBoxTypeName;
+        private ErrorProvider errorProvider;
     }
 }

@@ -53,6 +53,7 @@
             Margin = new Padding(5);
             Name = "FormMain";
             Text = "Главная форма";
+            Load += FormMain_Load;
             ResumeLayout(false);
             PerformLayout();
         }
