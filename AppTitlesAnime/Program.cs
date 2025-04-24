@@ -1,4 +1,4 @@
-namespace AppAnimeTitles
+namespace AppTitlesAnime
 {
     internal static class Program
     {
