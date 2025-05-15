@@ -10,8 +10,12 @@ namespace AppTitlesAnime
 		private void BtnShowTypes_Click(object sender, EventArgs e) 
 		{
 			FormListTypes formListTypes = new FormListTypes();
-			formListTypes.Show();
-		}
+            //FormListTypes formListTypes2 = new FormListTypes();
+			//Вывод диалогового окна
+            formListTypes.Show();
+            //Вызывает модальное окно - это окно появляющегося поверх страницы в ответ на действия пользователя и блокирующего доступ к основному содержимому страницы
+            //formListTypes2.ShowDialog();
+        }
 
 		private void BtnShowGenres_Click(object sender, EventArgs e) {
 			FormListGenres formListGenres = new FormListGenres();

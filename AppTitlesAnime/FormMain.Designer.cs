@@ -20,72 +20,73 @@
             base.Dispose(disposing);
         }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent() {
-			btnShowTypes = new Button();
-			btnShowGenres = new Button();
-			btnShowStatuses = new Button();
-			SuspendLayout();
-			// 
-			// btnShowTypes
-			// 
-			btnShowTypes.AutoSize = true;
-			btnShowTypes.Location = new Point(12, 12);
-			btnShowTypes.Name = "btnShowTypes";
-			btnShowTypes.Size = new Size(307, 35);
-			btnShowTypes.TabIndex = 0;
-			btnShowTypes.Text = "Отобазить список  \"Типы аниме\"";
-			btnShowTypes.UseVisualStyleBackColor = true;
-			btnShowTypes.Click += BtnShowTypes_Click;
-			// 
-			// btnShowGenres
-			// 
-			btnShowGenres.AutoSize = true;
-			btnShowGenres.Location = new Point(12, 53);
-			btnShowGenres.Name = "btnShowGenres";
-			btnShowGenres.Size = new Size(269, 35);
-			btnShowGenres.TabIndex = 1;
-			btnShowGenres.Text = "Отобразить список \"Жанры\"";
-			btnShowGenres.UseVisualStyleBackColor = true;
-			btnShowGenres.Click += BtnShowGenres_Click;
-			// 
-			// btnShowStatuses
-			// 
-			btnShowStatuses.AutoSize = true;
-			btnShowStatuses.Location = new Point(12, 94);
-			btnShowStatuses.Name = "btnShowStatuses";
-			btnShowStatuses.Size = new Size(269, 35);
-			btnShowStatuses.TabIndex = 2;
-			btnShowStatuses.Text = "Отобразить список \"Статус\"";
-			btnShowStatuses.UseVisualStyleBackColor = true;
-			btnShowStatuses.Click += BtnShowStatuses_Click;
-			// 
-			// FormMain
-			// 
-			AutoScaleDimensions = new SizeF(11F, 25F);
-			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = Color.White;
-			ClientSize = new Size(773, 506);
-			Controls.Add(btnShowStatuses);
-			Controls.Add(btnShowGenres);
-			Controls.Add(btnShowTypes);
-			Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			Margin = new Padding(5);
-			Name = "FormMain";
-			Text = "Главная Форма";
-			Click += BtnShowStatuses_Click;
-			ResumeLayout(false);
-			PerformLayout();
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            btnShowTypes = new Button();
+            btnShowGenres = new Button();
+            btnShowStatuses = new Button();
+            SuspendLayout();
+            // 
+            // btnShowTypes
+            // 
+            btnShowTypes.AutoSize = true;
+            btnShowTypes.Location = new Point(12, 12);
+            btnShowTypes.Name = "btnShowTypes";
+            btnShowTypes.Size = new Size(307, 35);
+            btnShowTypes.TabIndex = 0;
+            btnShowTypes.Text = "Отобазить список  \"Типы аниме\"";
+            btnShowTypes.UseVisualStyleBackColor = true;
+            btnShowTypes.Click += BtnShowTypes_Click;
+            // 
+            // btnShowGenres
+            // 
+            btnShowGenres.AutoSize = true;
+            btnShowGenres.Location = new Point(12, 53);
+            btnShowGenres.Name = "btnShowGenres";
+            btnShowGenres.Size = new Size(329, 35);
+            btnShowGenres.TabIndex = 1;
+            btnShowGenres.Text = "Отобразить список \"Жанры аниме\"";
+            btnShowGenres.UseVisualStyleBackColor = true;
+            btnShowGenres.Click += BtnShowGenres_Click;
+            // 
+            // btnShowStatuses
+            // 
+            btnShowStatuses.AutoSize = true;
+            btnShowStatuses.Location = new Point(12, 94);
+            btnShowStatuses.Name = "btnShowStatuses";
+            btnShowStatuses.Size = new Size(337, 35);
+            btnShowStatuses.TabIndex = 2;
+            btnShowStatuses.Text = "Отобразить список \"Статусы аниме\"";
+            btnShowStatuses.UseVisualStyleBackColor = true;
+            btnShowStatuses.Click += BtnShowStatuses_Click;
+            // 
+            // FormMain
+            // 
+            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(526, 319);
+            Controls.Add(btnShowStatuses);
+            Controls.Add(btnShowGenres);
+            Controls.Add(btnShowTypes);
+            Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Margin = new Padding(5);
+            Name = "FormMain";
+            Text = "Главная Форма";
+            Click += BtnShowStatuses_Click;
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		#endregion
+        #endregion
 
-		private Button btnShowTypes;
+        private Button btnShowTypes;
 		private Button btnShowGenres;
 		private Button btnShowStatuses;
 	}

@@ -54,7 +54,7 @@ namespace AppTitlesAnime {
 			db.Types.Add(type);
 			db.SaveChanges();
 
-			MessageBox.Show("Новый объект добавлен");
+			MessageBox.Show("Новый объект добавлен ","Добавление", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 			this.dataGridViewTypes.DataSource = this.db.Types.Local.OrderBy(o => o.TypeName).ToList();
 		}
@@ -82,18 +82,18 @@ namespace AppTitlesAnime {
 			db.Types.Update(type);
 			db.SaveChanges();
 
-			MessageBox.Show("Объект изменен");
+			MessageBox.Show("Объект изменен","Изменение",MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 			this.dataGridViewTypes.DataSource = this.db.Types.Local.OrderBy(o => o.TypeName).ToList();
 		}
 
-		private void btnDeleteType_Click(object sender, EventArgs e) {
+		private void BtnDeleteType_Click(object sender, EventArgs e) {
 			if (dataGridViewTypes.SelectedRows.Count == 0)
 				return;
 
 			DialogResult result = MessageBox.Show(
-				"Вы уверены, что хотите удалить объект?\nВсе связаные данные будут удалены.",
-				"",
+				"Вы уверены, что хотите удалить объект?\nВсе связанные данные будут удалены.",
+				"Подтвердите удаление",
 				MessageBoxButtons.YesNo,
 				MessageBoxIcon.Question
 				);
@@ -112,7 +112,7 @@ namespace AppTitlesAnime {
 			db.Types.Remove(type);
 			db.SaveChanges();
 
-			MessageBox.Show("Объект удалён");
+			MessageBox.Show("Объект удалён","Успешно");
 
 			this.dataGridViewTypes.DataSource = this.db.Types.Local.OrderBy(o => o.TypeName).ToList();
 		}
